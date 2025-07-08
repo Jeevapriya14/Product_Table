@@ -48,8 +48,96 @@ Use meaningful text inside the table for clarity.
 
 Keep the table design strictly in HTML for simplicity.
 ## HTML Code:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Table</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <table>
+    <caption>Available Products</caption>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Laptop</td>
+        <td>₹45,000</td>
+        <td>High-speed performance</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>$499</td>
+        <td>Budget-friendly</td>
+      </tr>
+      <tr>
+        <td>Headphones</td>
+        <td>₹2,500</td>
+        <td>Noise-cancelling feature</td>
+      </tr>
+      <tr>
+        <td>Smartwatch</td>
+        <td>$199</td>
+        <td>Fitness tracking</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+```
+### CSS :
+```
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
 
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+thead th {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e0f7e9;
+  cursor: pointer;
+}
+```
 ## Output:
+![image](https://github.com/user-attachments/assets/016eb099-f1c5-47f6-b14d-2f7fa676fb58)
 
 ## Result:
 A structured HTML table that displays product-related information, including product names, prices, and descriptions, useful for catalogs, listings, or e-commerce prototypes is created successfully.
